@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-sm navbar-light bg-white fixed-top" style="border-bottom: 2px solid #5EBD96;">
+    <div class="container-fluid">
+      <a class="navbar-brand mx-4" href="/"><b>PohonLink</b></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/admin">Links</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/profile">Profile</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <button class="btn text-white mx-1" type="button" onclick="copyClipboard('<%= link %>')" 
+            style="background: linear-gradient(90deg, #0367a6 0%, #008997 74%);">
+             Copy My Link              
+            </button>
+          <button class="btn btn-outline-danger mx-1" type="button" onclick="logOut()">Log Out</button>
+        </form>
+      </div>
+    </div>
+  </nav> 

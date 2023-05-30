@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup_style.css">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <div class="bg"></div>
+    <div class="container right-panel-active">
+        <!-- Sign Up -->
+        <div class="container__form container--signup">
+            <form class="form" id="formSignUp">
+                <h2 class="form__title"><b>Sign Up</b></h2>
+                <input type="email" placeholder="Email" class="input" id="email" required />
+                <input type="username" placeholder="Username" class="input" id="username" required />
+                <input type="password" placeholder="Password" class="input" id="password" required />
+                <select id="question" required>
+                    <option disabled selected value>-- Select your security question ! --</option>
+                    <option value="What city were you born in?">What city were you born in?</option>
+                    <option value="What is your oldest sibling’s middle name?">
+                        What is your oldest sibling’s middle name?</option>
+                    <option value="What was the first concert you attended?">
+                        What was the first concert you attended?
+                    </option>
+                    <option value="What was the make and model of your first car?">
+                        What was the make and model of your first car?</option>
+                    <option value="In what city or town did your parents meet?">
+                        In what city or town did your parents meet?</option>
+                </select>
+                <input type="username" placeholder="Answer" class="input" id="answer" required />
+                <button class="btn" id="btnSubmit" type="button">Submit</button>
+                <p class="message">Already have an account ? &nbsp; <a href="/login" class="link">log in</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script type="module" src="signup.js"></script>
+
+</html>
